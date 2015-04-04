@@ -1,17 +1,8 @@
 # rpi-python
 
-[![dockeri.co](http://dockeri.co/image/hypriot/rpi-python)](https://registry.hub.docker.com/u/hypriot/rpi-python/)
-
-Raspberry Pi compatible Docker base image with Python preinstalled.
+Raspberry Pi compatible Docker base image with Python and serial support (pyserial) preinstalled.  Forked from Hypriot's rpi-python repo.
 
 Run all the commands from within the project root directory.
-
-### Build Details
-- [Source Project Page](https://github.com/hypriot)
-- [Source Repository](https://github.com/hypriot/rpi-python)
-- [Dockerfile](https://github.com/hypriot/rpi-python/blob/master/Dockerfile)
-- [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-python/)
-
 
 #### Build the Docker Image
 ```bash
