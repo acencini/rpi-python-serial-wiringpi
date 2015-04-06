@@ -5,6 +5,8 @@ MAINTAINER Andrew Cencini <andrew@vapor.io>
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    git-core \
+    build-essential \
     gcc \
     python \
     python-dev \
@@ -13,7 +15,9 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 RUN pip install pyserial
-RUN pip install flask
+RUN git clone git://git.drogon.net/wiringPi
+RUN cd wiringPi && ./build
+RUN pip install wiringpi2
 
 # Define working directory
 WORKDIR /data
