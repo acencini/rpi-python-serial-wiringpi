@@ -15,7 +15,7 @@ make build
 
 #### Run the Image in HypriotOS with Docker (interactively)
 ```
-$ docker run --device /dev/mem:/dev/mem --device /dev/ttyAMA0:/dev/ttyAMA0 --privileged -ti <YOUR_IMAGE_HERE> /bin/bash
+docker run --device /dev/mem:/dev/mem --device /dev/ttyAMA0:/dev/ttyAMA0 --privileged -ti <YOUR_IMAGE_HERE> /bin/bash
 ```
 
 
