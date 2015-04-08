@@ -22,4 +22,5 @@ Replace YOUR_IMAGE_HERE with image name (acencini/rpi-python-serial-wiringpi if 
 docker run --device /dev/mem:/dev/mem --device /dev/ttyAMA0:/dev/ttyAMA0 --privileged -ti YOUR_IMAGE_HERE /bin/bash
 ```
 
+[MIT Licensed]([http://opensource.org/licenses/MIT])
 
