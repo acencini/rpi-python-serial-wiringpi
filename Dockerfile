@@ -1,6 +1,5 @@
-
 # Pull base image
-FROM resin/rpi-raspbian:wheezy
+FROM resin/rpi-raspbian:jessie
 MAINTAINER Andrew Cencini <andrew@vapor.io>
 
 # Install dependencies
@@ -21,6 +20,7 @@ RUN pip install wiringpi2
 
 # Define working directory
 WORKDIR /data
+VOLUME /data
 
 # Define default command
 CMD ["bash"]
